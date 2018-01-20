@@ -1,0 +1,1 @@
+A simple wrapper around CryptoJS's AES that provides object support.
