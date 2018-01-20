@@ -1,7 +1,6 @@
 const CryptoJS = require('crypto-js');
 
 export class AES {
-
 	static encrypt(data:any, key:string):string {
 		if(typeof data === 'object') data = JSON.stringify(data);
 		return CryptoJS.AES.encrypt(data, key).toString()

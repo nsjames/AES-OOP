@@ -1,12 +1,17 @@
 {
   "name": "aes-oop",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple wrapper around AES to support Objects",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -r ts-node/register src/**/*.spec.ts --exit"
+    "test": "mocha -r ts-node/register src/**/*.spec.ts --exit",
+    "publish":"tsc && npm publish"
   },
   "author": "nsjames",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nsjames/AES-OOP"
+  },
   "license": "MIT",
   "dependencies": {
     "crypto-js": "^3.1.9-1"
