@@ -1,1 +1,1 @@
-A simple wrapper around CryptoJS's AES that provides object support.
+A simple wrapper around sjcl's AES-GCM that provides object support.

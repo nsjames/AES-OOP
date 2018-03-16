@@ -16,16 +16,17 @@ describe('AES', () => {
 
 	it('should be able to encrypt a string', () => {
 		encryptedText = AES.encrypt(clearText, key);
-		assert(isEncrypted(encryptedText), "Could not encrypt string");
+		assert(clearText !== encryptedText, "Could not encrypt string");
 	});
 
 	it('should be able to decrypt a string', () => {
+		console.log('AES.decrypt(encryptedText, key)', AES.decrypt(encryptedText, key));
 		assert(AES.decrypt(encryptedText, key) === clearText, "Could not decrypt string");
 	});
 
 	it('should be able to encrypt an object', () => {
 		encryptedObject = AES.encrypt(clearObject, key);
-		assert(isEncrypted(encryptedObject), "Could not encrypt object");
+		assert(clearObject !== encryptedObject, "Could not encrypt object");
 	});
 
 	it('should be able to decrypt an object', () => {
